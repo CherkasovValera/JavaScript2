@@ -15,3 +15,13 @@
 */
 
 // Здесь пишем решение, данный комментарий необходимо стереть.
+const dayNumber = Number(prompt("Введите число от 1 до 31 включительно"));
+if (dayNumber < 1 || dayNumber > 31) {
+  console.log("Неверное значение");
+} else if (dayNumber > 0 && dayNumber < 11) {
+  console.log(`"Число ${dayNumber} попадает в 1ю декаду месяца."`);
+} else if (dayNumber > 10 && dayNumber < 21) {
+  console.log(`"Число ${dayNumber} попадает в 2ю декаду месяца."`);
+} else {
+  console.log(`"Число ${dayNumber} попадает в 3ю декаду месяца."`);
+}
